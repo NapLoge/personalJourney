@@ -1,9 +1,9 @@
 import React from "react";
 import "./Sectiontittle.css";
 
-function Sectiontittle(props){
+function Sectiontittle({title}){
   return(
-    <p id="sectionTittle">{props.tittle}</p>
+    <p id="sectionTittle">{title}</p>
   );
 }
 
