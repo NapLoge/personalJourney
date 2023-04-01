@@ -3,14 +3,14 @@ import Sectiontittle from "./Sectiontittle";
 import Sectiontext from "./Sectiontext";
 import "./Aboutme.css";
 
-function Aboutme(props){
+function Aboutme({ aboutme }){
   return(
     <div id="aboutmeFrame">
       <div id="aboutmeInfo">
-        <Sectiontittle id="aboutmeTittle" tittle={props.aboutme.tittle} /> 
-        <Sectiontext text={props.aboutme.text} />
+        <Sectiontittle id="aboutmeTittle" tittle={aboutme.tittle} /> 
+        <Sectiontext text={aboutme.text} />
       </div>
-      <img src={require(`${props.aboutme.image}`)}></img>
+      <img src={require(`${aboutme.image}`)}></img>
     </div>
   );
 }
